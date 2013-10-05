@@ -55,12 +55,14 @@ watch files. default id is "main", default callback just reload current page.
 
 example
 ```
-refresh.conf({
-    host:'http://localhost',
-    port:8090
-}).watch("test", function(data){
-    console.log(data.id);
-    console.log(data.filename);
-});
+<script type="text/javascript">
+    refresh.conf({
+        host:'http://localhost',
+        port:8090
+    }).watch("test", function(data){
+        console.log(data.id);
+        console.log(data.filename);
+    });
+</script>
 ````
 
