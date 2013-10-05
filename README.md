@@ -9,7 +9,7 @@ First, you need download the source code. Assume that you put the code at direct
 Then, you need put a refresh configuration file named `refresh.json` to your web project directory.
 Finally, run `node dir_of_refresh/lib/refresh.js` on the path of your web project.
 
-
+Certainly， you also need put script in client file such as `index.html`.
 ```
 <script type="text/javascript" src="http://localhost:8090/socket.io/socket.io.js"></script>
 <script type="text/javascript" src="../lib/refresh-client.js"></script>
