@@ -47,7 +47,7 @@ The watch rules indicate files to be watched. We use javascript regular expressi
 
 API
 ------
-`refresh.conf({host:xxx, port:xxx})`
+`refresh.conf({host:"", port:})`
 configure the host and port. default host is "http://localhost", default port is 8090
 
 `refresh.watch(id, callback)`
