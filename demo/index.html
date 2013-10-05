@@ -4,8 +4,13 @@
     <meta content="text/html" charset="utf-8">
     <title>refresh</title>
     <link rel="stylesheet" href="css/style.css" />
+
     <script type="text/javascript" src="http://localhost:8090/socket.io/socket.io.js"></script>
     <script type="text/javascript" src="../lib/refresh-client.js"></script>
+    <script type="text/javascript">
+        refresh.watch();
+    </script>
+
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         function get_r() {
@@ -14,11 +19,9 @@
                 r = "0"+r;
             }
 
-
             return r;
         }
         window.onload = function() {
-            refresh.watch();
             var clr = "#"+get_r()+get_r()+get_r();
             document.getElementById("title").style.color = clr;
             document.getElementById("clr").textContent = clr;

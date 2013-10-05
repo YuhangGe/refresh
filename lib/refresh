@@ -1,0 +1,4 @@
+#!/bin/bash
+# run refresh.js in nodejs
+node /usr/local/bin/refresh.js
+

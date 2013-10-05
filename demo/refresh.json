@@ -6,8 +6,7 @@
             "index.html",
             "css/.+\\.css",
             "js/.+\\.js",
-            "test/.+",
-            "test/.+/.+"
+            "test/**/.+"
         ]
     },{
         "id" : "test",
