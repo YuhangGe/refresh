@@ -19,7 +19,7 @@ Finally, run `node dir_of_refresh/lib/refresh.js` on the path of your web projec
 ```
 
 
-Configuration
+Configuration File
 -------
 Here is an example configuration file `refresh.json` under `demo/` directory. Its content is:
 ````
@@ -45,6 +45,15 @@ Here is an example configuration file `refresh.json` under `demo/` directory. It
 
 The watch rules indicate files to be watched. We use javascript regular expression to describe the rule. A special rule notation is `**`, it means files under current directory and all child directories.
 
+API
+------
+`refresh.conf({host:xxx, port:xxx})`
+configure the host and port. default host is "http://localhost", default port is 8090
+
+`refresh.watch(id, callback)`
+watch files. default id is "main", default callback just reload current page.
+
+example
 ```
 refresh.conf({
     host:'http://localhost',
