@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8">
+    <title>refresh</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="http://localhost:8090/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="../lib/refresh-client.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        refresh.watch("test", function(data) {
+            console.log(data);
+        });
+    </script>
+</head>
+<body>
+    <h1>Refresh Test Page</h1>
+    <div>
+        <p style="color: red;">test index.html</p>
+        <p id="test_css">test style.css</p>
+        <p id="test_js">test index.js</p>
+    </div>
+</body>
+</html>

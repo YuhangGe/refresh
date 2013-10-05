@@ -1,0 +1,19 @@
+{
+	"port" : 8090,
+	"watch" : [{
+        "id" : "main",
+        "rules" : [
+            "index.html",
+            "css/.+\\.css",
+            "js/.+\\.js",
+            "test/.+",
+            "test/.+/.+"
+        ]
+    },{
+        "id" : "test",
+        "rules" : [
+            "test.html",
+            "test/.+/.+"
+        ]
+    }]
+}
